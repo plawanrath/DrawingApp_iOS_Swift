@@ -12,7 +12,8 @@
 		C893F8161A75EBCF005E0F43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C893F8141A75EBCF005E0F43 /* Main.storyboard */; };
 		C893F8181A75EBCF005E0F43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C893F8171A75EBCF005E0F43 /* Images.xcassets */; };
 		C893F81B1A75EBCF005E0F43 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C893F8191A75EBCF005E0F43 /* LaunchScreen.xib */; };
-		C893F8271A75EBCF005E0F43 /* DrawingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C893F8261A75EBCF005E0F43 /* DrawingAppTests.swift */; };
+		C893F8311A75EC57005E0F43 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C893F8301A75EC57005E0F43 /* DrawView.swift */; };
+		C893F8331A75EEE4005E0F43 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = C893F8321A75EEE4005E0F43 /* Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +35,8 @@
 		C893F8171A75EBCF005E0F43 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C893F81A1A75EBCF005E0F43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C893F8201A75EBCF005E0F43 /* DrawingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C893F8251A75EBCF005E0F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C893F8261A75EBCF005E0F43 /* DrawingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingAppTests.swift; sourceTree = "<group>"; };
+		C893F8301A75EC57005E0F43 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		C893F8321A75EEE4005E0F43 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				C893F80D1A75EBCF005E0F43 /* DrawingApp */,
-				C893F8231A75EBCF005E0F43 /* DrawingAppTests */,
 				C893F80C1A75EBCF005E0F43 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +79,8 @@
 			children = (
 				C893F8101A75EBCF005E0F43 /* AppDelegate.swift */,
 				C893F8121A75EBCF005E0F43 /* ViewController.swift */,
+				C893F8301A75EC57005E0F43 /* DrawView.swift */,
+				C893F8321A75EEE4005E0F43 /* Line.swift */,
 				C893F8141A75EBCF005E0F43 /* Main.storyboard */,
 				C893F8171A75EBCF005E0F43 /* Images.xcassets */,
 				C893F8191A75EBCF005E0F43 /* LaunchScreen.xib */,
@@ -91,23 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				C893F80F1A75EBCF005E0F43 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C893F8231A75EBCF005E0F43 /* DrawingAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				C893F8261A75EBCF005E0F43 /* DrawingAppTests.swift */,
-				C893F8241A75EBCF005E0F43 /* Supporting Files */,
-			);
-			path = DrawingAppTests;
-			sourceTree = "<group>";
-		};
-		C893F8241A75EBCF005E0F43 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C893F8251A75EBCF005E0F43 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -213,7 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C893F8131A75EBCF005E0F43 /* ViewController.swift in Sources */,
+				C893F8331A75EEE4005E0F43 /* Line.swift in Sources */,
 				C893F8111A75EBCF005E0F43 /* AppDelegate.swift in Sources */,
+				C893F8311A75EC57005E0F43 /* DrawView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C893F8271A75EBCF005E0F43 /* DrawingAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
